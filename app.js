@@ -27,8 +27,8 @@
       button.setAttribute('aria-pressed', String(active));
     });
     document.title = lang === 'es'
-      ? 'Omar Rodríguez — Ingeniero de Software y Datos'
-      : 'Omar Rodríguez — Software & Data Engineer';
+      ? 'Omar Gustavo Rodriguez Becerra — Ingeniero de Software y Datos'
+      : 'Omar Gustavo Rodriguez Becerra — Software & Data Engineer';
     try { localStorage.setItem('portfolio-language', lang); } catch (_) { /* Storage can be disabled. */ }
   };
 

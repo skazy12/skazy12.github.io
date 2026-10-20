@@ -1,4 +1,4 @@
-# Portafolio de Omar Rodríguez
+# Portafolio de Omar Gustavo Rodriguez Becerra
 
 Sitio personal bilingüe orientado a presentar experiencia en backend, desarrollo full-stack e ingeniería de datos.
 

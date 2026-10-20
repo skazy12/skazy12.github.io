@@ -53,6 +53,8 @@
     header.classList.toggle('is-scrolled', window.scrollY > 16);
   }, { passive: true });
 
+  document.querySelectorAll('.hero .reveal').forEach((element) => element.classList.add('is-visible'));
+
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if ('IntersectionObserver' in window && !reduceMotion) {
     const observer = new IntersectionObserver((entries) => {

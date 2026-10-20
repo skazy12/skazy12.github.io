@@ -188,6 +188,7 @@ button { font: inherit; }
 
 .js .reveal { opacity: 0; transform: translateY(22px); transition: opacity .7s ease, transform .7s ease; }
 .js .reveal.is-visible { opacity: 1; transform: none; }
+.js .hero .reveal { opacity: 1; transform: none; transition: none; }
 
 @media (max-width: 1040px) {
   .nav-links { gap: 18px; }

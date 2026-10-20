@@ -148,7 +148,7 @@
       <div class="shell section-heading reveal">
         <p class="section-kicker">02 / <span data-es="Trabajo seleccionado" data-en="Selected work">Trabajo seleccionado</span></p>
         <h2 id="projects-title" data-es="Proyectos que muestran cómo pienso." data-en="Projects that show how I think.">Proyectos que muestran cómo pienso.</h2>
-        <p data-es="Cuatro casos de estudio que conectan producto, arquitectura, datos y calidad. Todos usan datos ficticios o sintéticos." data-en="Four case studies connecting product, architecture, data and quality. All use fictional or synthetic data.">Cuatro casos de estudio que conectan producto, arquitectura, datos y calidad. Todos usan datos ficticios o sintéticos.</p>
+        <p data-es="Siete casos de estudio que conectan producto, arquitectura, datos y calidad. Todos usan datos ficticios, sintéticos o fuentes preparadas por el usuario." data-en="Seven case studies connecting product, architecture, data and quality. They use fictional, synthetic or user-prepared sources.">Siete casos de estudio que conectan producto, arquitectura, datos y calidad. Todos usan datos ficticios, sintéticos o fuentes preparadas por el usuario.</p>
       </div>
 
       <div class="shell project-stack">
@@ -243,35 +243,76 @@
 
       <div class="shell more-projects reveal">
         <div class="more-heading">
-          <h3 data-es="Más trabajo" data-en="More work">Más trabajo</h3>
-          <p data-es="Tres experimentos que amplían el mapa: conocimiento, retail y herramientas para desarrolladores." data-en="Three projects expanding the map: knowledge, retail and developer tooling.">Tres experimentos que amplían el mapa: conocimiento, retail y herramientas para desarrolladores.</p>
+          <h3 data-es="Tres proyectos más, con la misma profundidad" data-en="Three more projects, with the same depth">Tres proyectos más, con la misma profundidad</h3>
+          <p data-es="Conocimiento, analítica retail y herramientas para desarrolladores: tres problemas distintos resueltos con productos completos y verificables." data-en="Knowledge, retail analytics and developer tooling: three different problems solved through complete, verifiable products.">Conocimiento, analítica retail y herramientas para desarrolladores: tres problemas distintos resueltos con productos completos y verificables.</p>
         </div>
-        <div class="more-grid">
-          <article class="compact-project">
-            <span class="compact-icon" aria-hidden="true">KN</span>
-            <p class="project-type">Knowledge Systems</p>
-            <h4>Cerebro de Estudio</h4>
-            <p data-es="Convierte fuentes propias en un grafo consultable, con revisión humana y citas para cada conocimiento aprobado." data-en="Turns private sources into a queryable graph, with human review and citations for every approved piece of knowledge.">Convierte fuentes propias en un grafo consultable, con revisión humana y citas para cada conocimiento aprobado.</p>
-            <ul class="tech-row"><li>FastAPI</li><li>React</li><li>SQLite</li><li>Qdrant</li></ul>
-            <a href="https://github.com/skazy12/cerebro-de-estudio" target="_blank" rel="noopener" aria-label="Cerebro de Estudio en GitHub">GitHub <span aria-hidden="true">↗</span></a>
+        <div class="project-stack expanded-projects">
+          <article class="project-case reveal">
+            <div class="project-media">
+              <picture>
+                <source srcset="assets/images/projects/cerebro-de-estudio.webp" type="image/webp">
+                <img src="assets/images/projects/cerebro-de-estudio.png" width="1906" height="887" loading="lazy" alt="Grafo interactivo de Cerebro de Estudio" data-es-alt="Grafo interactivo de Cerebro de Estudio" data-en-alt="Cerebro de Estudio interactive knowledge graph">
+              </picture>
+              <span class="project-number">05</span>
+            </div>
+            <div class="project-copy">
+              <p class="project-type">Knowledge Systems · Local-first</p>
+              <h3>Cerebro de Estudio</h3>
+              <p class="project-intro" data-es="Aplicación local que convierte fuentes preparadas por el usuario en conocimiento estructurado, revisado y consultable sin perder la evidencia original." data-en="A local application that turns user-prepared sources into structured, reviewed and queryable knowledge without losing the original evidence.">Aplicación local que convierte fuentes preparadas por el usuario en conocimiento estructurado, revisado y consultable sin perder la evidencia original.</p>
+              <dl class="project-facts">
+                <div><dt data-es="Reto" data-en="Challenge">Reto</dt><dd data-es="Evitar que propuestas automáticas se conviertan en hechos sin revisión, procedencia ni respaldo suficiente." data-en="Prevent automated proposals from becoming facts without review, provenance or sufficient support.">Evitar que propuestas automáticas se conviertan en hechos sin revisión, procedencia ni respaldo suficiente.</dd></div>
+                <div><dt data-es="Solución" data-en="Solution">Solución</dt><dd data-es="Aprobación humana para nodos y relaciones, citas con localizador, SQLite como fuente de verdad y Qdrant como índice reconstruible." data-en="Human approval for nodes and relationships, locator-backed citations, SQLite as the source of truth and Qdrant as a rebuildable index.">Aprobación humana para nodos y relaciones, citas con localizador, SQLite como fuente de verdad y Qdrant como índice reconstruible.</dd></div>
+                <div><dt data-es="Evidencia" data-en="Evidence">Evidencia</dt><dd data-es="Flujo documentado de biblioteca, validación, revisión, grafo, consulta con citas y copias de seguridad portables." data-en="A documented workflow covering library, validation, review, graph, citation-backed queries and portable backups.">Flujo documentado de biblioteca, validación, revisión, grafo, consulta con citas y copias de seguridad portables.</dd></div>
+              </dl>
+              <ul class="tech-row"><li>FastAPI</li><li>React</li><li>TypeScript</li><li>SQLite</li><li>Qdrant</li><li>Docker</li></ul>
+              <a class="project-link" href="https://github.com/skazy12/cerebro-de-estudio" target="_blank" rel="noopener"><span data-es="Explorar repositorio" data-en="Explore repository">Explorar repositorio</span><span aria-hidden="true">↗</span></a>
+            </div>
           </article>
-          <article class="compact-project">
-            <span class="compact-icon" aria-hidden="true">BI</span>
-            <p class="project-type">Analytics · Retail</p>
-            <h4>SmartRetail Data Platform</h4>
-            <p data-es="Plataforma end-to-end desde una aplicación operativa hasta capas Medallion, modelo dimensional y Power BI." data-en="An end-to-end platform spanning an operational app, Medallion layers, dimensional modelling and Power BI.">Plataforma end-to-end desde una aplicación operativa hasta capas Medallion, modelo dimensional y Power BI.</p>
-            <ul class="tech-row"><li>PySpark</li><li>Streamlit</li><li>SQLite</li><li>Power BI</li></ul>
-            <a href="https://github.com/skazy12/smartretail-data-platform" target="_blank" rel="noopener" aria-label="SmartRetail Data Platform en GitHub">GitHub <span aria-hidden="true">↗</span></a>
+
+          <article class="project-case project-case-reverse reveal">
+            <div class="project-media">
+              <picture>
+                <source srcset="assets/images/projects/smartretail.webp" type="image/webp">
+                <img src="assets/images/projects/smartretail.png" width="1151" height="645" loading="lazy" alt="Dashboard comercial de SmartRetail" data-es-alt="Dashboard comercial de SmartRetail" data-en-alt="SmartRetail commercial dashboard">
+              </picture>
+              <span class="project-number">06</span>
+            </div>
+            <div class="project-copy">
+              <p class="project-type">Data Platform · Retail Analytics</p>
+              <h3>SmartRetail Data Platform</h3>
+              <p class="project-intro" data-es="Plataforma end-to-end para registrar operaciones de una tienda ficticia y convertirlas en un modelo analítico listo para Power BI." data-en="An end-to-end platform that records operations for a fictional retailer and turns them into an analytics model ready for Power BI.">Plataforma end-to-end para registrar operaciones de una tienda ficticia y convertirlas en un modelo analítico listo para Power BI.</p>
+              <dl class="project-facts">
+                <div><dt data-es="Reto" data-en="Challenge">Reto</dt><dd data-es="Conectar datos operativos y análisis sin mezclar registros válidos, errores de calidad ni transformaciones intermedias." data-en="Connect operational data and analytics without mixing valid records, quality failures or intermediate transformations.">Conectar datos operativos y análisis sin mezclar registros válidos, errores de calidad ni transformaciones intermedias.</dd></div>
+                <div><dt data-es="Solución" data-en="Solution">Solución</dt><dd data-es="Snapshots Parquet, capas Bronze/Silver/Rejected/Gold, reglas de calidad y un modelo dimensional con ruta estable para consumo." data-en="Parquet snapshots, Bronze/Silver/Rejected/Gold layers, data quality rules and a dimensional model with a stable consumption path.">Snapshots Parquet, capas Bronze/Silver/Rejected/Gold, reglas de calidad y un modelo dimensional con ruta estable para consumo.</dd></div>
+                <div><dt data-es="Evidencia" data-en="Evidence">Evidencia</dt><dd data-es="19 pruebas automatizadas y un dashboard de Power BI con ingresos, margen, productos, canales, ciudades y métodos de pago." data-en="19 automated tests and a Power BI dashboard covering revenue, margin, products, channels, cities and payment methods.">19 pruebas automatizadas y un dashboard de Power BI con ingresos, margen, productos, canales, ciudades y métodos de pago.</dd></div>
+              </dl>
+              <ul class="tech-row"><li>Python</li><li>PySpark</li><li>Streamlit</li><li>SQLite</li><li>Parquet</li><li>Power BI</li></ul>
+              <a class="project-link" href="https://github.com/skazy12/smartretail-data-platform" target="_blank" rel="noopener"><span data-es="Explorar repositorio" data-en="Explore repository">Explorar repositorio</span><span aria-hidden="true">↗</span></a>
+            </div>
           </article>
-          <article class="compact-project compact-featured">
-            <span class="compact-icon" aria-hidden="true">&lt;/&gt;</span>
-            <p class="project-type">Developer Tool · Live</p>
-            <h4>DOCODE</h4>
-            <p data-es="Analiza repositorios o carpetas locales en el navegador y genera documentación estructurada para revisión o uso con LLMs." data-en="Analyses repositories or local folders in the browser and generates structured documentation for review or LLM workflows.">Analiza repositorios o carpetas locales en el navegador y genera documentación estructurada para revisión o uso con LLMs.</p>
-            <ul class="tech-row"><li>React</li><li>Vite</li><li>GitHub API</li><li>Browser APIs</li></ul>
-            <div class="compact-links">
-              <a href="https://skazy12.github.io/docode/" target="_blank" rel="noopener"><span data-es="Ver demo" data-en="Live demo">Ver demo</span> <span aria-hidden="true">↗</span></a>
-              <a href="https://github.com/skazy12/docode" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+
+          <article class="project-case reveal">
+            <div class="project-media">
+              <picture>
+                <source srcset="assets/images/projects/docode.webp" type="image/webp">
+                <img src="assets/images/projects/docode.png" width="1200" height="750" loading="lazy" alt="Interfaz web de DOCODE" data-es-alt="Interfaz web de DOCODE" data-en-alt="DOCODE web interface">
+              </picture>
+              <span class="project-number">07</span>
+            </div>
+            <div class="project-copy">
+              <p class="project-type">Developer Tool · Browser-only</p>
+              <h3>DOCODE</h3>
+              <p class="project-intro" data-es="Herramienta web que analiza repositorios públicos o carpetas locales y genera un contexto estructurado para documentación, revisión de código o trabajo con LLMs." data-en="A web tool that analyses public repositories or local folders and generates structured context for documentation, code review or LLM workflows.">Herramienta web que analiza repositorios públicos o carpetas locales y genera un contexto estructurado para documentación, revisión de código o trabajo con LLMs.</p>
+              <dl class="project-facts">
+                <div><dt data-es="Reto" data-en="Challenge">Reto</dt><dd data-es="Extraer los archivos relevantes de proyectos distintos sin exigir instalación, backend ni subir el código a otro servidor." data-en="Extract relevant files from different project types without requiring installation, a backend or uploading code to another server.">Extraer los archivos relevantes de proyectos distintos sin exigir instalación, backend ni subir el código a otro servidor.</dd></div>
+                <div><dt data-es="Solución" data-en="Solution">Solución</dt><dd data-es="Procesamiento 100% en navegador, reglas por framework, navegación por árbol y exportación de toda la documentación a un archivo de texto." data-en="100% in-browser processing, framework-specific rules, tree navigation and export of the complete documentation to a text file.">Procesamiento 100% en navegador, reglas por framework, navegación por árbol y exportación de toda la documentación a un archivo de texto.</dd></div>
+                <div><dt data-es="Evidencia" data-en="Evidence">Evidencia</dt><dd data-es="Demo pública funcional con modos GitHub y local, selección de framework y token opcional almacenado únicamente en el navegador." data-en="A working public demo with GitHub and local modes, framework selection and an optional token kept only in the browser.">Demo pública funcional con modos GitHub y local, selección de framework y token opcional almacenado únicamente en el navegador.</dd></div>
+              </dl>
+              <ul class="tech-row"><li>React</li><li>Vite</li><li>GitHub API</li><li>File System Access API</li><li>GitHub Pages</li></ul>
+              <div class="project-link-row">
+                <a class="project-link" href="https://skazy12.github.io/docode/" target="_blank" rel="noopener"><span data-es="Abrir demo" data-en="Open live demo">Abrir demo</span><span aria-hidden="true">↗</span></a>
+                <a class="project-link project-link-secondary" href="https://github.com/skazy12/docode" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+              </div>
             </div>
           </article>
         </div>
